@@ -1,16 +1,15 @@
-<mat-sidenav-container class="app-sidenav-container">
-    <mat-sidenav #sidenav mode="side" [opened]="sideMenuOpened" class="drawer">
-        <app-sidemenu [myself]="myself"></app-sidemenu>
-    </mat-sidenav>
-    <mat-sidenav-content class="app-main-container">
-        <div class="app-main-content">
-            <div class="navbar-shadow">
-                <app-navbar (sideMenuToggled)="sideMenuToggle()" [myself]="myself"></app-navbar>
-            </div>
-            <div class="app-page">
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </mat-sidenav-content>
-</mat-sidenav-container>
-<div>Footer</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WorkflowAdminFe</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+</body>
+</html>
