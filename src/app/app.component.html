@@ -1,0 +1,17 @@
+<mat-sidenav-container class="app-sidenav-container">
+    <mat-sidenav #sidenav mode="side" [opened]="sideMenuOpened" class="drawer">
+        <app-sidemenu [myself]="myself"></app-sidemenu>
+    </mat-sidenav>
+    <mat-sidenav-content class="app-main-container">
+        <div class="app-main-content">
+            <div class="navbar-shadow">
+                <app-navbar (sideMenuToggled)="sideMenuToggle()" [myself]="myself"></app-navbar>
+            </div>
+            <div class="app-page">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<div>Footer</div>
+
